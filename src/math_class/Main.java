@@ -44,7 +44,24 @@ public class Main {
 
        // (int) Math.random() * (-m -1));
 
+        int m = 10;
+        int n = 5;
+        Random random = new Random();
 
+
+
+        int randomNegativeInteger1 = -random.nextInt(m + 1);
+        System.out.println("Random negative integer in the range [-" + m + ",0]: " + randomNegativeInteger1);
+
+
+        int randomNegativeInteger2 = -random.nextInt(m - n + 1) - n;
+        System.out.println("Random negative integer in the range [-" + m + ",-" + n + "]: " + randomNegativeInteger2);
+
+        int randomNegativeInteger3 = -random.nextInt(m + n + 1);
+        if (randomNegativeInteger3 > 0) {
+            randomNegativeInteger3 = -randomNegativeInteger3;
+        }
+        System.out.println("Random negative integer in the range [-" + m + "," + n + "]: " + randomNegativeInteger3);
 
 
     }
