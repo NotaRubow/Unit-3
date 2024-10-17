@@ -39,18 +39,10 @@ public class Main {
         // create a random number in the range [0,n]
         double random3 = Math.random() *7;
         // create a random integer in the range [m,n]
+        int random4 = (int)(Math.random()*4) + 4;
+        System.out.println(random4);
 
-
-
-        //using the Random Class
-        //This is not static so we have to create a Random object
-
-        //create a Random object
-
-        //get int with and without bound
-
-        // get double
-
+       // (int) Math.random() * (-m -1));
 
 
 
